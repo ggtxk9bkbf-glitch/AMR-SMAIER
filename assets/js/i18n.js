@@ -123,6 +123,7 @@ const I18N = {
     // services
     "services.eyebrow": "Programmes",
     "services.title": "Coaching, Considered.",
+    "services.heroSub": "Swimming · Strength &amp; Conditioning · Performance",
     "services.detailEyebrow": "What's Available",
     "services.detailTitle": "Four Pathways to Better Performance",
     "services.s1Title": "Private Swim Lessons",
@@ -363,6 +364,7 @@ const I18N = {
     // services
     "services.eyebrow": "البرامج",
     "services.title": "تدريب مدروس.",
+    "services.heroSub": "سباحة · قوة وتكييف · أداء",
     "services.detailEyebrow": "ما هو متاح",
     "services.detailTitle": "أربع مسارات نحو أداء أفضل",
     "services.s1Title": "دروس سباحة خاصة",
