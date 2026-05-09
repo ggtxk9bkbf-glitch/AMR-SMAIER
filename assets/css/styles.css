@@ -883,6 +883,33 @@ footer h4 { color: var(--white); font-size: 11px; letter-spacing: .22em; }
 footer ul { display: flex; flex-direction: column; gap: 10px; }
 footer li { font-size: 14px; }
 footer a:hover { color: var(--white); }
+
+/* Social icons in footer */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,.7);
+  transition: color var(--transition), transform var(--transition);
+}
+.social-link:hover {
+  color: var(--white);
+  transform: translateX(3px);
+}
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: currentColor;
+  transition: fill var(--transition);
+}
+.social-link:hover svg { fill: var(--accent-light); }
 .footer-legal {
   max-width: 1240px;
   margin: 0 auto;
