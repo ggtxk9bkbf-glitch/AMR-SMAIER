@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body data-page="services">
@@ -18,20 +19,21 @@
     <span></span><span></span><span></span>
   </button>
   <nav class="links" id="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="services.html" class="active" data-i18n="nav.services">Services</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-  <a class="cta" href="contact.html">Book a Session</a>
+  <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg><span class="lang-label">العربية</span></button>
+  <a class="cta" href="contact.html" data-i18n="nav.cta">Book a Session</a>
 </header>
 
 <section class="page-hero page-hero-sm">
   <img src="public/images/services.jpg" alt="Pool training session" class="page-hero-img" />
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
-    <p class="eyebrow" style="color:var(--accent-light)">Programmes</p>
-    <h1>Coaching, Considered.</h1>
+    <p class="eyebrow" style="color:var(--accent-light)" data-i18n="services.eyebrow">Programmes</p>
+    <h1 data-i18n="services.title">Coaching, Considered.</h1>
   </div>
 </section>
 
@@ -39,23 +41,23 @@
 <section class="section-light">
   <div class="container">
     <div class="section-header center reveal">
-      <p class="eyebrow">What's Available</p>
-      <h2>Four Pathways to Better Performance</h2>
+      <p class="eyebrow" data-i18n="services.detailEyebrow">What's Available</p>
+      <h2 data-i18n="services.detailTitle">Four Pathways to Better Performance</h2>
     </div>
 
     <div class="service-detail reveal">
       <div class="service-detail-num mono">01</div>
       <div class="service-detail-body">
-        <h3>Private Swim Lessons</h3>
-        <p class="lede">One-to-one pool time. Drills, video review, and the kind of precise feedback that sticks between sessions.</p>
+        <h3 data-i18n="services.s1Title">Private Swim Lessons</h3>
+        <p class="lede" data-i18n="services.s1Lede">One-to-one pool time. Drills, video review, and the kind of precise feedback that sticks between sessions.</p>
         <ul class="feature-list">
-          <li>60-minute pool session</li>
-          <li>On-deck video analysis</li>
-          <li>Personalised drill set</li>
-          <li>Take-home written plan (PDF)</li>
-          <li>All four strokes: freestyle, butterfly, breaststroke, backstroke</li>
+          <li data-i18n="services.s1F1">60-minute pool session</li>
+          <li data-i18n="services.s1F2">On-deck video analysis</li>
+          <li data-i18n="services.s1F3">Personalised drill set</li>
+          <li data-i18n="services.s1F4">Take-home written plan (PDF)</li>
+          <li data-i18n="services.s1F5">All four strokes: freestyle, butterfly, breaststroke, backstroke</li>
         </ul>
-        <a href="contact.html" class="btn btn-dark">Book This</a>
+        <a href="contact.html" class="btn btn-dark" data-i18n="services.bookBtn">Book This</a>
       </div>
       <div class="service-detail-img">
         <img src="public/images/services.jpg" alt="Swim lesson" class="img-rounded" />
@@ -70,16 +72,16 @@
         <img src="public/images/about.jpg" alt="Strength training" class="img-rounded" />
       </div>
       <div class="service-detail-body">
-        <h3>Strength & Conditioning</h3>
-        <p class="lede">Land-based S&C programming built around the physical demands of competitive swimming — power, mobility, injury resistance.</p>
+        <h3 data-i18n="services.s2Title">Strength & Conditioning</h3>
+        <p class="lede" data-i18n="services.s2Lede">Land-based S&C programming built around the physical demands of competitive swimming — power, mobility, injury resistance.</p>
         <ul class="feature-list">
-          <li>Movement screen & baseline assessment</li>
-          <li>Somatic physical training methodology</li>
-          <li>6 or 12-week structured block</li>
-          <li>Gym programming (Fit Zone or your own facility)</li>
-          <li>Mid-block video review & adjustment</li>
+          <li data-i18n="services.s2F1">Movement screen & baseline assessment</li>
+          <li data-i18n="services.s2F2">Somatic physical training methodology</li>
+          <li data-i18n="services.s2F3">6 or 12-week structured block</li>
+          <li data-i18n="services.s2F4">Gym programming (Fit Zone or your own facility)</li>
+          <li data-i18n="services.s2F5">Mid-block video review & adjustment</li>
         </ul>
-        <a href="contact.html" class="btn btn-dark">Book This</a>
+        <a href="contact.html" class="btn btn-dark" data-i18n="services.bookBtn">Book This</a>
       </div>
     </div>
 
@@ -88,16 +90,16 @@
     <div class="service-detail reveal">
       <div class="service-detail-num mono">03</div>
       <div class="service-detail-body">
-        <h3>Remote Online Coaching</h3>
-        <p class="lede">Anywhere in the world. Film your sessions, receive your plan, and get daily feedback — all through a structured online system.</p>
+        <h3 data-i18n="services.s3Title">Remote Online Coaching</h3>
+        <p class="lede" data-i18n="services.s3Lede">Anywhere in the world. Film your sessions, receive your plan, and get daily feedback — all through a structured online system.</p>
         <ul class="feature-list">
-          <li>Weekly custom training plan</li>
-          <li>Bi-monthly stroke video analysis</li>
-          <li>Daily voice-note feedback</li>
-          <li>WhatsApp access Monday–Friday</li>
-          <li>Monthly video review call</li>
+          <li data-i18n="services.s3F1">Weekly custom training plan</li>
+          <li data-i18n="services.s3F2">Bi-monthly stroke video analysis</li>
+          <li data-i18n="services.s3F3">Daily voice-note feedback</li>
+          <li data-i18n="services.s3F4">WhatsApp access Monday–Friday</li>
+          <li data-i18n="services.s3F5">Monthly video review call</li>
         </ul>
-        <a href="contact.html" class="btn btn-dark">Book This</a>
+        <a href="contact.html" class="btn btn-dark" data-i18n="services.bookBtn">Book This</a>
       </div>
       <div class="service-detail-img">
         <img src="public/images/contact.jpg" alt="Online coaching" class="img-rounded" />
@@ -112,16 +114,16 @@
         <img src="public/images/services.jpg" alt="Race preparation" class="img-rounded" />
       </div>
       <div class="service-detail-body">
-        <h3>Open Water & Race Prep</h3>
-        <p class="lede">Championship-focused coaching: taper design, race strategy, mental preparation, and a detailed race-day plan.</p>
+        <h3 data-i18n="services.s4Title">Open Water & Race Prep</h3>
+        <p class="lede" data-i18n="services.s4Lede">Championship-focused coaching: taper design, race strategy, mental preparation, and a detailed race-day plan.</p>
         <ul class="feature-list">
-          <li>4–8 week race-specific block</li>
-          <li>Open water sighting & pacing</li>
-          <li>Custom taper programme</li>
-          <li>Race-day plan (written)</li>
-          <li>Post-race debrief & next-cycle planning</li>
+          <li data-i18n="services.s4F1">4–8 week race-specific block</li>
+          <li data-i18n="services.s4F2">Open water sighting & pacing</li>
+          <li data-i18n="services.s4F3">Custom taper programme</li>
+          <li data-i18n="services.s4F4">Race-day plan (written)</li>
+          <li data-i18n="services.s4F5">Post-race debrief & next-cycle planning</li>
         </ul>
-        <a href="contact.html" class="btn btn-dark">Book This</a>
+        <a href="contact.html" class="btn btn-dark" data-i18n="services.bookBtn">Book This</a>
       </div>
     </div>
   </div>
@@ -131,45 +133,45 @@
 <section class="section-dark">
   <div class="container">
     <div class="section-header center reveal">
-      <p class="eyebrow">Investment</p>
-      <h2>Clear, Simple Pricing</h2>
-      <p class="lede center-lede">No hidden fees. No long lock-ins. Cancel or pause any month.</p>
+      <p class="eyebrow" data-i18n="services.priceEyebrow">Investment</p>
+      <h2 data-i18n="services.priceTitle">Clear, Simple Pricing</h2>
+      <p class="lede center-lede" data-i18n="services.priceLede">No hidden fees. No long lock-ins. Cancel or pause any month.</p>
     </div>
     <div class="pricing-grid">
       <div class="pricing-card reveal">
-        <p class="mono pricing-tier">Starter</p>
-        <h3>Foundation</h3>
-        <div class="price">$120<span>/ session</span></div>
+        <p class="mono pricing-tier" data-i18n="services.p1Tier">Starter</p>
+        <h3 data-i18n="services.p1Name">Foundation</h3>
+        <div class="price">$120<span data-i18n="services.p1PerSession">/ session</span></div>
         <ul>
-          <li>1 private pool session</li>
-          <li>On-deck video review</li>
-          <li>Take-home drill plan</li>
+          <li data-i18n="services.p1F1">1 private pool session</li>
+          <li data-i18n="services.p1F2">On-deck video review</li>
+          <li data-i18n="services.p1F3">Take-home drill plan</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline">Get Started</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="services.priceCta">Get Started</a>
       </div>
       <div class="pricing-card featured reveal" style="animation-delay:.1s">
-        <div class="featured-badge mono">Most Popular</div>
-        <p class="mono pricing-tier">Performance</p>
-        <h3>Monthly Package</h3>
-        <div class="price">$480<span>/ month</span></div>
+        <div class="featured-badge mono" data-i18n="services.p2Badge">Most Popular</div>
+        <p class="mono pricing-tier" data-i18n="services.p2Tier">Performance</p>
+        <h3 data-i18n="services.p2Name">Monthly Package</h3>
+        <div class="price">$480<span data-i18n="services.p2PerMonth">/ month</span></div>
         <ul>
-          <li>4 private pool sessions</li>
-          <li>S&C programming (2×/wk)</li>
-          <li>Monthly video review</li>
-          <li>WhatsApp support</li>
+          <li data-i18n="services.p2F1">4 private pool sessions</li>
+          <li data-i18n="services.p2F2">S&C programming (2×/wk)</li>
+          <li data-i18n="services.p2F3">Monthly video review</li>
+          <li data-i18n="services.p2F4">WhatsApp support</li>
         </ul>
-        <a href="contact.html" class="btn btn-light">Get Started</a>
+        <a href="contact.html" class="btn btn-light" data-i18n="services.priceCta">Get Started</a>
       </div>
       <div class="pricing-card reveal" style="animation-delay:.2s">
-        <p class="mono pricing-tier">Remote</p>
-        <h3>Online Coaching</h3>
-        <div class="price">$260<span>/ month</span></div>
+        <p class="mono pricing-tier" data-i18n="services.p3Tier">Remote</p>
+        <h3 data-i18n="services.p3Name">Online Coaching</h3>
+        <div class="price">$260<span data-i18n="services.p2PerMonth">/ month</span></div>
         <ul>
-          <li>Weekly training plan</li>
-          <li>Bi-monthly stroke analysis</li>
-          <li>Daily voice feedback</li>
+          <li data-i18n="services.p3F1">Weekly training plan</li>
+          <li data-i18n="services.p3F2">Bi-monthly stroke analysis</li>
+          <li data-i18n="services.p3F3">Daily voice feedback</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline">Get Started</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="services.priceCta">Get Started</a>
       </div>
     </div>
   </div>
@@ -179,43 +181,43 @@
 <section class="section-light">
   <div class="container">
     <div class="section-header center reveal">
-      <p class="eyebrow">The Process</p>
-      <h2>How Your First Month Looks</h2>
+      <p class="eyebrow" data-i18n="services.processEyebrow">The Process</p>
+      <h2 data-i18n="services.processTitle">How Your First Month Looks</h2>
     </div>
     <div class="process-steps">
       <div class="process-step reveal">
-        <div class="step-num">Wk 0</div>
+        <div class="step-num" data-i18n="services.proc1Num">Wk 0</div>
         <div class="step-body">
-          <h4>Discovery Call</h4>
-          <p>Goals, history, current level, schedule. No commitments — just an honest conversation.</p>
+          <h4 data-i18n="services.proc1Title">Discovery Call</h4>
+          <p data-i18n="services.proc1Desc">Goals, history, current level, schedule. No commitments — just an honest conversation.</p>
         </div>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">Wk 1</div>
+        <div class="step-num" data-i18n="services.proc2Num">Wk 1</div>
         <div class="step-body">
-          <h4>Baseline Assessment</h4>
-          <p>Filmed swim session + movement screen on land. We measure everything before building anything.</p>
+          <h4 data-i18n="services.proc2Title">Baseline Assessment</h4>
+          <p data-i18n="services.proc2Desc">Filmed swim session + movement screen on land. We measure everything before building anything.</p>
         </div>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">Wk 2</div>
+        <div class="step-num" data-i18n="services.proc3Num">Wk 2</div>
         <div class="step-body">
-          <h4>Plan Delivered</h4>
-          <p>Your written programme — pool sessions, gym work, recovery. Clear, structured, realistic.</p>
+          <h4 data-i18n="services.proc3Title">Plan Delivered</h4>
+          <p data-i18n="services.proc3Desc">Your written programme — pool sessions, gym work, recovery. Clear, structured, realistic.</p>
         </div>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">Wk 3</div>
+        <div class="step-num" data-i18n="services.proc4Num">Wk 3</div>
         <div class="step-body">
-          <h4>First Check-In</h4>
-          <p>Review load, adjust focus. Are you responding? Great. Is something off? We fix it now.</p>
+          <h4 data-i18n="services.proc4Title">First Check-In</h4>
+          <p data-i18n="services.proc4Desc">Review load, adjust focus. Are you responding? Great. Is something off? We fix it now.</p>
         </div>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">Wk 4</div>
+        <div class="step-num" data-i18n="services.proc5Num">Wk 4</div>
         <div class="step-body">
-          <h4>Block Review</h4>
-          <p>Re-film, compare to baseline, measure progress. Plan the next block based on real data.</p>
+          <h4 data-i18n="services.proc5Title">Block Review</h4>
+          <p data-i18n="services.proc5Desc">Re-film, compare to baseline, measure progress. Plan the next block based on real data.</p>
         </div>
       </div>
     </div>
@@ -224,9 +226,9 @@
 
 <section class="section-accent">
   <div class="container center reveal">
-    <h2>Not Sure Which Programme Fits?</h2>
-    <p class="lede center-lede">Book a free 20-minute call and we'll figure it out together.</p>
-    <a href="contact.html" class="btn btn-light mt-18">Schedule a Call</a>
+    <h2 data-i18n="services.ctaTitle">Not Sure Which Programme Fits?</h2>
+    <p class="lede center-lede" data-i18n="services.ctaP">Book a free 20-minute call and we'll figure it out together.</p>
+    <a href="contact.html" class="btn btn-light mt-18" data-i18n="services.ctaBtn">Schedule a Call</a>
   </div>
 </section>
 
@@ -235,12 +237,12 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand-wordmark">AMR<span>SAMIR</span></div>
-        <p>Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
+        <p data-i18n="footer.tagline">Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
       </div>
-      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li>hello@amrsamir.coach</li><li>WhatsApp available</li><li>Cairo · Kuwait</li></ul></div>
+      <div><h4 data-i18n="footer.navigate">Navigate</h4><ul><li><a href="index.html" data-i18n="nav.home">Home</a></li><li><a href="about.html" data-i18n="nav.about">About</a></li><li><a href="services.html" data-i18n="nav.services">Services</a></li><li><a href="contact.html" data-i18n="nav.contact">Contact</a></li></ul></div>
+      <div><h4 data-i18n="footer.contact">Contact</h4><ul><li data-i18n="footer.email">hello@amrsamir.coach</li><li data-i18n="footer.whatsapp">WhatsApp available</li><li data-i18n="footer.location">Cairo · Kuwait</li></ul></div>
       <div>
-        <h4>Follow</h4>
+        <h4 data-i18n="footer.follow">Follow</h4>
         <div class="social-links">
           <a class="social-link" href="https://www.instagram.com/amr0samir/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -257,9 +259,10 @@
         </div>
       </div>
     </div>
-    <div class="footer-legal"><span>© <span id="year"></span> Amr Samir. All rights reserved.</span></div>
+    <div class="footer-legal"><span>© <span id="year"></span> Amr Samir. <span data-i18n="footer.copyright">All rights reserved.</span></span></div>
   </div>
 </footer>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

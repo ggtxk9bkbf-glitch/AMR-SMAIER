@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body data-page="home">
@@ -18,12 +19,13 @@
     <span></span><span></span><span></span>
   </button>
   <nav class="links" id="nav-links">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-  <a class="cta" href="contact.html">Book a Session</a>
+  <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg><span class="lang-label">العربية</span></button>
+  <a class="cta" href="contact.html" data-i18n="nav.cta">Book a Session</a>
 </header>
 
 <!-- HERO -->
@@ -35,21 +37,17 @@
   <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div class="hero-badge reveal-up">
-      <span class="mono">Est. 2011 · Cairo, Egypt</span>
+      <span class="mono" data-i18n="home.heroBadge">Est. 2011 · Cairo, Egypt</span>
     </div>
-    <h1 class="reveal-up" style="animation-delay:.1s">
-      Train Like<br/>A <em>Champion.</em>
-    </h1>
-    <p class="hero-sub reveal-up" style="animation-delay:.22s">
-      Swimming · Strength & Conditioning · Performance
-    </p>
+    <h1 class="reveal-up" style="animation-delay:.1s" data-i18n="home.heroTitle">Train Like<br/>A <em>Champion.</em></h1>
+    <p class="hero-sub reveal-up" style="animation-delay:.22s" data-i18n="home.heroSub">Swimming · Strength & Conditioning · Performance</p>
     <div class="hero-actions reveal-up" style="animation-delay:.34s">
-      <a href="services.html" class="btn btn-primary">Explore Programs</a>
-      <a href="about.html" class="btn btn-ghost">Meet the Coach</a>
+      <a href="services.html" class="btn btn-primary" data-i18n="home.heroBtn1">Explore Programs</a>
+      <a href="about.html" class="btn btn-ghost" data-i18n="home.heroBtn2">Meet the Coach</a>
     </div>
   </div>
   <div class="hero-scroll">
-    <span class="mono">Scroll</span>
+    <span class="mono" data-i18n="home.scroll">Scroll</span>
     <div class="scroll-line"></div>
   </div>
 </section>
@@ -59,22 +57,22 @@
   <div class="container stats-row">
     <div class="stat reveal">
       <strong>12+</strong>
-      <span>Years Coaching</span>
+      <span data-i18n="home.stat1Label">Years Coaching</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat reveal">
       <strong>300+</strong>
-      <span>Athletes Trained</span>
+      <span data-i18n="home.stat2Label">Athletes Trained</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat reveal">
       <strong>3</strong>
-      <span>Elite Clubs</span>
+      <span data-i18n="home.stat3Label">Elite Clubs</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat reveal">
-      <strong>Kuwait</strong>
-      <span>Current Base</span>
+      <strong data-i18n="home.stat4Num">Kuwait</strong>
+      <span data-i18n="home.stat4Label">Current Base</span>
     </div>
   </div>
 </div>
@@ -85,16 +83,16 @@
     <div class="split-img reveal">
       <img src="public/images/about.jpg" alt="Coach Amr Samir" class="img-rounded" />
       <div class="img-badge">
-        <span class="mono">Head Coach</span>
-        <strong>Poseidon Kuwait</strong>
+        <span class="mono" data-i18n="home.imgBadgeLabel">Head Coach</span>
+        <strong data-i18n="home.imgBadgeValue">Poseidon Kuwait</strong>
       </div>
     </div>
     <div class="split-text reveal" style="animation-delay:.15s">
-      <p class="eyebrow">About the Coach</p>
-      <h2>Built on Discipline.<br/>Driven by Results.</h2>
-      <p class="lede">I'm Amr Samir — swimming coach, strength & conditioning specialist, and founder of Fit Zone Gym. Since 2011, I've developed athletes at every level, from youth programmes at Gezira El Ward Club to leading men's squads at Poseidon Kuwait.</p>
-      <p class="lede" style="margin-top:14px">My coaching philosophy is simple: understand the athlete, build the programme around their needs, and hold the standard every single session.</p>
-      <a href="about.html" class="btn btn-dark mt-18">Full Biography</a>
+      <p class="eyebrow" data-i18n="home.aboutEyebrow">About the Coach</p>
+      <h2 data-i18n="home.aboutTitle">Built on Discipline.<br/>Driven by Results.</h2>
+      <p class="lede" data-i18n="home.aboutP1">I'm Amr Samir — swimming coach, strength & conditioning specialist, and founder of Fit Zone Gym. Since 2011, I've developed athletes at every level, from youth programmes at Gezira El Ward Club to leading men's squads at Poseidon Kuwait.</p>
+      <p class="lede" style="margin-top:14px" data-i18n="home.aboutP2">My coaching philosophy is simple: understand the athlete, build the programme around their needs, and hold the standard every single session.</p>
+      <a href="about.html" class="btn btn-dark mt-18" data-i18n="home.aboutBtn">Full Biography</a>
     </div>
   </div>
 </section>
@@ -103,28 +101,28 @@
 <section class="section-dark">
   <div class="container">
     <div class="section-header center reveal">
-      <p class="eyebrow">What I Offer</p>
-      <h2>Coaching Programmes</h2>
-      <p class="lede center-lede">Four specialised disciplines. One committed coach.</p>
+      <p class="eyebrow" data-i18n="home.servicesEyebrow">What I Offer</p>
+      <h2 data-i18n="home.servicesTitle">Coaching Programmes</h2>
+      <p class="lede center-lede" data-i18n="home.servicesLede">Four specialised disciplines. One committed coach.</p>
     </div>
     <div class="grid-3">
       <div class="service-card reveal">
         <div class="service-icon">🏊</div>
-        <h3>Swim Technique</h3>
-        <p>Freestyle, butterfly, breaststroke, backstroke. Video analysis, targeted drills, stroke refinement.</p>
-        <a href="services.html" class="card-link">Learn more →</a>
+        <h3 data-i18n="home.svc1Title">Swim Technique</h3>
+        <p data-i18n="home.svc1Desc">Freestyle, butterfly, breaststroke, backstroke. Video analysis, targeted drills, stroke refinement.</p>
+        <a href="services.html" class="card-link" data-i18n="home.cardLink">Learn more →</a>
       </div>
       <div class="service-card reveal" style="animation-delay:.1s">
         <div class="service-icon">💪</div>
-        <h3>Strength & Conditioning</h3>
-        <p>Land-based power programming built around the specific demands of competitive swimming.</p>
-        <a href="services.html" class="card-link">Learn more →</a>
+        <h3 data-i18n="home.svc2Title">Strength & Conditioning</h3>
+        <p data-i18n="home.svc2Desc">Land-based power programming built around the specific demands of competitive swimming.</p>
+        <a href="services.html" class="card-link" data-i18n="home.cardLink">Learn more →</a>
       </div>
       <div class="service-card reveal" style="animation-delay:.2s">
         <div class="service-icon">🏆</div>
-        <h3>Elite Race Prep</h3>
-        <p>Championship taper, race strategy, mental preparation. Designed for podium performance.</p>
-        <a href="services.html" class="card-link">Learn more →</a>
+        <h3 data-i18n="home.svc3Title">Elite Race Prep</h3>
+        <p data-i18n="home.svc3Desc">Championship taper, race strategy, mental preparation. Designed for podium performance.</p>
+        <a href="services.html" class="card-link" data-i18n="home.cardLink">Learn more →</a>
       </div>
     </div>
   </div>
@@ -133,10 +131,8 @@
 <!-- TESTIMONIAL -->
 <section class="section-accent">
   <div class="container reveal">
-    <blockquote class="big-quote">
-      "Coach Amr's technical eye and relentless attention to detail transformed my freestyle — and my results."
-    </blockquote>
-    <cite class="mono">— National Level Swimmer, Gezira El Ward Club</cite>
+    <blockquote class="big-quote" data-i18n="home.quote">"Coach Amr's technical eye and relentless attention to detail transformed my freestyle — and my results."</blockquote>
+    <cite class="mono" data-i18n="home.quoteCite">— National Level Swimmer, Gezira El Ward Club</cite>
   </div>
 </section>
 
@@ -144,10 +140,10 @@
 <section class="section-light">
   <div class="container split reverse">
     <div class="split-text reveal">
-      <p class="eyebrow">Ready to Begin?</p>
-      <h2>Your First Session Starts Here.</h2>
-      <p class="lede">The first 60 minutes are a baseline: goals, current level, movement screen. We build from there — systematically, patiently, and with a clear plan in hand.</p>
-      <a href="contact.html" class="btn btn-dark mt-18">Book Your Session</a>
+      <p class="eyebrow" data-i18n="home.ctaEyebrow">Ready to Begin?</p>
+      <h2 data-i18n="home.ctaTitle">Your First Session Starts Here.</h2>
+      <p class="lede" data-i18n="home.ctaP">The first 60 minutes are a baseline: goals, current level, movement screen. We build from there — systematically, patiently, and with a clear plan in hand.</p>
+      <a href="contact.html" class="btn btn-dark mt-18" data-i18n="home.ctaBtn">Book Your Session</a>
     </div>
     <div class="split-img reveal" style="animation-delay:.15s">
       <img src="public/images/services.jpg" alt="Pool training" class="img-rounded" />
@@ -160,27 +156,27 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand-wordmark">AMR<span>SAMIR</span></div>
-        <p>Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
+        <p data-i18n="footer.tagline">Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
       </div>
       <div>
-        <h4>Navigate</h4>
+        <h4 data-i18n="footer.navigate">Navigate</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
-          <li>hello@amrsamir.coach</li>
-          <li>WhatsApp available</li>
-          <li>Cairo · Kuwait</li>
+          <li data-i18n="footer.email">hello@amrsamir.coach</li>
+          <li data-i18n="footer.whatsapp">WhatsApp available</li>
+          <li data-i18n="footer.location">Cairo · Kuwait</li>
         </ul>
       </div>
       <div>
-        <h4>Follow</h4>
+        <h4 data-i18n="footer.follow">Follow</h4>
         <div class="social-links">
           <a class="social-link" href="https://www.instagram.com/amr0samir/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -198,11 +194,12 @@
       </div>
     </div>
     <div class="footer-legal">
-      <span>© <span id="year"></span> Amr Samir. All rights reserved.</span>
+      <span>© <span id="year"></span> Amr Samir. <span data-i18n="footer.copyright">All rights reserved.</span></span>
     </div>
   </div>
 </footer>
 
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

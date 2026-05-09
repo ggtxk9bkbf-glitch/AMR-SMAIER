@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body data-page="contact">
@@ -18,64 +19,65 @@
     <span></span><span></span><span></span>
   </button>
   <nav class="links" id="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
   </nav>
-  <a class="cta" href="#form">Book a Session</a>
+  <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg><span class="lang-label">العربية</span></button>
+  <a class="cta" href="#form" data-i18n="nav.cta">Book a Session</a>
 </header>
 
 <section class="page-hero page-hero-sm">
   <img src="public/images/contact.jpg" alt="Get in touch" class="page-hero-img" />
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
-    <p class="eyebrow" style="color:var(--accent-light)">Get in Touch</p>
-    <h1>Let's Begin.</h1>
+    <p class="eyebrow" style="color:var(--accent-light)" data-i18n="contact.eyebrow">Get in Touch</p>
+    <h1 data-i18n="contact.title">Let's Begin.</h1>
   </div>
 </section>
 
 <section class="section-light" id="form">
   <div class="container split">
     <div class="split-text reveal">
-      <p class="eyebrow">Send a Message</p>
-      <h2>Tell Me a Little About You.</h2>
-      <p class="lede" style="margin-bottom:36px">A few sentences is enough — I reply within 24 hours. Let's find out if we're a good fit.</p>
+      <p class="eyebrow" data-i18n="contact.formEyebrow">Send a Message</p>
+      <h2 data-i18n="contact.formTitle">Tell Me a Little About You.</h2>
+      <p class="lede" style="margin-bottom:36px" data-i18n="contact.formLede">A few sentences is enough — I reply within 24 hours. Let's find out if we're a good fit.</p>
 
       <form id="contact-form" class="contact-form" novalidate>
         <div class="form-row">
           <div class="field">
-            <label for="name">Full Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name" />
+            <label for="name" data-i18n="contact.fName">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" data-i18n-placeholder="contact.fNamePh" required autocomplete="name" />
           </div>
           <div class="field">
-            <label for="email">Email Address</label>
-            <input id="email" name="email" type="email" placeholder="you@email.com" required autocomplete="email" />
+            <label for="email" data-i18n="contact.fEmail">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" data-i18n-placeholder="contact.fEmailPh" required autocomplete="email" />
           </div>
         </div>
         <div class="form-row">
           <div class="field">
-            <label for="phone">Phone / WhatsApp</label>
-            <input id="phone" name="phone" type="tel" placeholder="+20 or +965..." autocomplete="tel" />
+            <label for="phone" data-i18n="contact.fPhone">Phone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" placeholder="+20 or +965..." data-i18n-placeholder="contact.fPhonePh" autocomplete="tel" />
           </div>
           <div class="field">
-            <label for="goal">I'm Interested In</label>
+            <label for="goal" data-i18n="contact.fGoal">I'm Interested In</label>
             <select id="goal" name="goal">
-              <option value="">Select a programme…</option>
-              <option>Private swim lessons</option>
-              <option>Strength & conditioning</option>
-              <option>Online coaching</option>
-              <option>Race / open water prep</option>
-              <option>Just an introductory call</option>
+              <option value="" data-i18n="contact.fGoalDefault">Select a programme…</option>
+              <option data-i18n="contact.fGoalO1">Private swim lessons</option>
+              <option data-i18n="contact.fGoalO2">Strength & conditioning</option>
+              <option data-i18n="contact.fGoalO3">Online coaching</option>
+              <option data-i18n="contact.fGoalO4">Race / open water prep</option>
+              <option data-i18n="contact.fGoalO5">Just an introductory call</option>
             </select>
           </div>
         </div>
         <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Current level, goals, any history or injuries I should know about…"></textarea>
+          <label for="message" data-i18n="contact.fMessage">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Current level, goals, any history or injuries I should know about…" data-i18n-placeholder="contact.fMessagePh"></textarea>
         </div>
         <div class="form-footer">
-          <button type="submit" class="btn btn-dark">Send Message</button>
+          <button type="submit" class="btn btn-dark" data-i18n="contact.fSubmit">Send Message</button>
           <span id="form-status" class="mono form-status"></span>
         </div>
       </form>
@@ -83,45 +85,45 @@
 
     <aside class="contact-info reveal" style="animation-delay:.15s">
       <div class="info-card">
-        <h3>Direct Contact</h3>
+        <h3 data-i18n="contact.infoTitle">Direct Contact</h3>
         <div class="info-item">
-          <span class="mono">Email</span>
+          <span class="mono" data-i18n="contact.infoEmailLabel">Email</span>
           <a href="mailto:hello@amrsamir.coach">hello@amrsamir.coach</a>
         </div>
         <div class="info-item">
-          <span class="mono">WhatsApp</span>
+          <span class="mono" data-i18n="contact.infoWhatsappLabel">WhatsApp</span>
           <a href="https://wa.me/201000000000">+20 100 000 0000</a>
         </div>
 
         <div class="divider" style="margin:24px 0"></div>
 
-        <h3>Locations</h3>
+        <h3 data-i18n="contact.locTitle">Locations</h3>
         <div class="info-item">
-          <span class="mono">Egypt</span>
-          <span>Cairo (Gezira El Ward area)</span>
+          <span class="mono" data-i18n="contact.locEgyptLabel">Egypt</span>
+          <span data-i18n="contact.locEgyptVal">Cairo (Gezira El Ward area)</span>
         </div>
         <div class="info-item">
-          <span class="mono">Kuwait</span>
-          <span>Poseidon Swimming Club</span>
+          <span class="mono" data-i18n="contact.locKuwaitLabel">Kuwait</span>
+          <span data-i18n="contact.locKuwaitVal">Poseidon Swimming Club</span>
         </div>
         <div class="info-item">
-          <span class="mono">Online</span>
-          <span>Worldwide — no location required</span>
+          <span class="mono" data-i18n="contact.locOnlineLabel">Online</span>
+          <span data-i18n="contact.locOnlineVal">Worldwide — no location required</span>
         </div>
 
         <div class="divider" style="margin:24px 0"></div>
 
-        <h3>Availability</h3>
+        <h3 data-i18n="contact.hoursTitle">Availability</h3>
         <div class="hours-table">
-          <div class="hours-row"><span>Mon — Fri</span><span>06:00 — 20:00</span></div>
-          <div class="hours-row"><span>Saturday</span><span>07:00 — 14:00</span></div>
-          <div class="hours-row"><span>Sunday</span><span>By arrangement</span></div>
+          <div class="hours-row"><span data-i18n="contact.hMonFri">Mon — Fri</span><span data-i18n="contact.hMonFriV">06:00 — 20:00</span></div>
+          <div class="hours-row"><span data-i18n="contact.hSat">Saturday</span><span data-i18n="contact.hSatV">07:00 — 14:00</span></div>
+          <div class="hours-row"><span data-i18n="contact.hSun">Sunday</span><span data-i18n="contact.hSunV">By arrangement</span></div>
         </div>
 
         <div class="divider" style="margin:24px 0"></div>
 
         <div class="response-note mono">
-          Average response time: &lt; 24 hours
+          <span data-i18n="contact.responseNote">Average response time: &lt; 24 hours</span>
         </div>
       </div>
     </aside>
@@ -131,7 +133,7 @@
 <!-- MAP -->
 <section class="section-map">
   <div class="container reveal">
-    <p class="eyebrow center" style="margin-bottom:18px">Pool Location — Cairo</p>
+    <p class="eyebrow center" style="margin-bottom:18px" data-i18n="contact.mapEyebrow">Pool Location — Cairo</p>
     <div class="map-wrap">
       <iframe
         title="Gezira El Ward area, Cairo"
@@ -147,12 +149,12 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand-wordmark">AMR<span>SAMIR</span></div>
-        <p>Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
+        <p data-i18n="footer.tagline">Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
       </div>
-      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li>hello@amrsamir.coach</li><li>WhatsApp available</li><li>Cairo · Kuwait</li></ul></div>
+      <div><h4 data-i18n="footer.navigate">Navigate</h4><ul><li><a href="index.html" data-i18n="nav.home">Home</a></li><li><a href="about.html" data-i18n="nav.about">About</a></li><li><a href="services.html" data-i18n="nav.services">Services</a></li><li><a href="contact.html" data-i18n="nav.contact">Contact</a></li></ul></div>
+      <div><h4 data-i18n="footer.contact">Contact</h4><ul><li data-i18n="footer.email">hello@amrsamir.coach</li><li data-i18n="footer.whatsapp">WhatsApp available</li><li data-i18n="footer.location">Cairo · Kuwait</li></ul></div>
       <div>
-        <h4>Follow</h4>
+        <h4 data-i18n="footer.follow">Follow</h4>
         <div class="social-links">
           <a class="social-link" href="https://www.instagram.com/amr0samir/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -169,9 +171,10 @@
         </div>
       </div>
     </div>
-    <div class="footer-legal"><span>© <span id="year"></span> Amr Samir. All rights reserved.</span></div>
+    <div class="footer-legal"><span>© <span id="year"></span> Amr Samir. <span data-i18n="footer.copyright">All rights reserved.</span></span></div>
   </div>
 </footer>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
