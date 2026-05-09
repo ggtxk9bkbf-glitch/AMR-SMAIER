@@ -1,49 +1,64 @@
-// nav scroll state
+// Nav scroll state
 const nav = document.querySelector('.nav');
 const isHome = document.body.dataset.page === 'home';
-function onScroll(){
-  if(!nav) return;
-  const y = window.scrollY;
-  if(isHome){
-    nav.classList.toggle('solid', y > 60);
+
+function updateNav() {
+  if (!nav) return;
+  if (isHome) {
+    nav.classList.toggle('solid', window.scrollY > 60);
   } else {
     nav.classList.add('solid');
   }
 }
-window.addEventListener('scroll', onScroll, {passive:true});
-onScroll();
+window.addEventListener('scroll', updateNav, { passive: true });
+updateNav();
 
-// mobile menu
-const toggle = document.querySelector('.nav-toggle');
-const links = document.querySelector('.nav .links');
-if(toggle && links){
-  toggle.addEventListener('click', () => links.classList.toggle('open'));
+// Mobile menu
+const toggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+if (toggle && navLinks) {
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+  });
+  // Close menu on link click
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
 }
 
-// reveal on scroll
+// Scroll reveal with IntersectionObserver
 const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-}, {threshold:0.12});
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-// year
-const y = document.getElementById('year');
-if(y) y.textContent = new Date().getFullYear();
+document.querySelectorAll('.reveal, .reveal-up').forEach(el => io.observe(el));
 
-// contact form (no backend — opens mail client)
+// Copyright year
+const yr = document.getElementById('year');
+if (yr) yr.textContent = new Date().getFullYear();
+
+// Contact form → mailto
 const form = document.getElementById('contact-form');
-if(form){
+if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const data = new FormData(form);
-    const name = encodeURIComponent(data.get('name') || '');
-    const email = encodeURIComponent(data.get('email') || '');
-    const phone = encodeURIComponent(data.get('phone') || '');
-    const goal = encodeURIComponent(data.get('goal') || '');
-    const msg = encodeURIComponent(data.get('message') || '');
-    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AGoal: ${goal}%0D%0A%0D%0A${msg}`;
-    window.location.href = `mailto:hello@amrsmaier.coach?subject=New%20coaching%20enquiry&body=${body}`;
+    const d = new FormData(form);
+    const enc = v => encodeURIComponent(d.get(v) || '');
+    const body =
+      `Name: ${enc('name')}%0D%0A` +
+      `Email: ${enc('email')}%0D%0A` +
+      `Phone: ${enc('phone')}%0D%0A` +
+      `Programme: ${enc('goal')}%0D%0A%0D%0A` +
+      `${enc('message')}`;
+    window.location.href =
+      `mailto:hello@amrsamir.coach?subject=Coaching%20Enquiry&body=${body}`;
     const status = document.getElementById('form-status');
-    if(status) status.textContent = 'Opening your email client…';
+    if (status) status.textContent = 'Opening your email client…';
   });
 }

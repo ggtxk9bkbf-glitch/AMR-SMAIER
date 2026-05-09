@@ -3,132 +3,221 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>About — Amr Smaier</title>
-<meta name="description" content="Twelve years coaching swimmers and athletes. Certified, calm, and obsessed with the details." />
+<title>About — Amr Samir</title>
+<meta name="description" content="Amr Samir — Swimming Coach, Strength & Conditioning Specialist, and Founder of Fit Zone Gym. 12+ years at elite clubs across Egypt and Kuwait." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body data-page="about">
 
 <header class="nav solid">
-  <a class="brand" href="index.html">A · SMAIER</a>
-  <button class="nav-toggle" aria-label="Menu">≡</button>
-  <nav class="links">
+  <a class="brand" href="index.html">AMR<span>SAMIR</span></a>
+  <button class="nav-toggle" aria-label="Menu" id="nav-toggle">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="links" id="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html" class="active">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <a class="cta" href="contact.html">Book a session</a>
+  <a class="cta" href="contact.html">Book a Session</a>
 </header>
 
-<section class="page-head">
-  <p class="eyebrow">About the coach</p>
-  <h1 class="serif">Twelve years. One craft.</h1>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <img src="public/images/about.jpg" alt="Coach Amr Samir" class="page-hero-img" />
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="eyebrow" style="color:var(--accent-light)">The Coach</p>
+    <h1>Amr Samir</h1>
+    <p class="hero-sub">Swimming Coach · S&C Specialist · Founder, Fit Zone Gym</p>
+  </div>
 </section>
 
-<section style="background:var(--paper)">
+<!-- BIO -->
+<section class="section-light">
   <div class="container split">
-    <div class="reveal">
-      <img src="https://picsum.photos/seed/coachbio/900/1200" alt="Amr Smaier" style="border-radius:18px;aspect-ratio:3/4;object-fit:cover" />
+    <div class="split-text reveal">
+      <p class="eyebrow">Biography</p>
+      <h2>From Mansoura to Kuwait — A Coaching Career Built in the Water.</h2>
+      <p class="lede">Amr Samir holds a degree in Physical Education from Mansoura University (2011–2015) and has spent every year since on pool decks and in weight rooms, developing swimmers from youth level to national competition.</p>
+      <p class="lede" style="margin-top:14px">In 2024 he took on the role of Assistant Head Coach for Poseidon Kuwait Men — bringing with him over a decade of experience in Egyptian club swimming, an ASCA-equivalent coaching background, and the practical wisdom of founding and running Fit Zone Gym.</p>
+      <p class="lede" style="margin-top:14px">His coaching philosophy centres on precise needs assessment, somatic physical development, and the kind of patient, communication-led mentoring that turns potential into consistent performance.</p>
     </div>
-    <div class="reveal">
-      <p class="eyebrow">Bio</p>
-      <h2 class="display">From the lanes of Alexandria to coaching rooms worldwide.</h2>
-      <p class="lede">I started swimming at six and never really stopped. After racing through university and a brief stint on the national circuit, I moved into coaching — first as a side practice, then as my whole life. Today I work with athletes online and in person, from beginners learning to breathe to masters chasing personal bests.</p>
-      <p class="lede" style="margin-top:14px">My approach is built on listening first. Every body moves differently in the water, and the job of a coach is to find the version of the stroke that's already trying to come out.</p>
-    </div>
-  </div>
-</section>
-
-<section style="background:var(--bg)">
-  <div class="container">
-    <div class="center reveal" style="max-width:680px;margin:0 auto 56px">
-      <p class="eyebrow">Credentials</p>
-      <h2 class="display">Certifications & background</h2>
-    </div>
-    <div class="grid-3">
-      <div class="card reveal">
-        <p class="num">CERT</p>
-        <h3 class="display">ASCA Level 3</h3>
-        <p class="muted">American Swimming Coaches Association — competitive swim coaching.</p>
-      </div>
-      <div class="card reveal">
-        <p class="num">CERT</p>
-        <h3 class="display">NSCA-CSCS</h3>
-        <p class="muted">Certified Strength & Conditioning Specialist for athlete programming.</p>
-      </div>
-      <div class="card reveal">
-        <p class="num">CERT</p>
-        <h3 class="display">FINA Open Water</h3>
-        <p class="muted">Open water coaching, race strategy and safety credentials.</p>
-      </div>
-      <div class="card reveal">
-        <p class="num">EDU</p>
-        <h3 class="display">BSc Sports Science</h3>
-        <p class="muted">Specialization in biomechanics and aquatic locomotion.</p>
-      </div>
-      <div class="card reveal">
-        <p class="num">EDU</p>
-        <h3 class="display">Precision Nutrition L1</h3>
-        <p class="muted">Practical nutrition coaching for endurance athletes.</p>
-      </div>
-      <div class="card reveal">
-        <p class="num">FIRST AID</p>
-        <h3 class="display">Lifeguard & CPR</h3>
-        <p class="muted">Current pool and open-water lifeguarding certification.</p>
+    <div class="split-img reveal" style="animation-delay:.15s">
+      <img src="public/images/about.jpg" alt="Amr Samir coaching" class="img-rounded" />
+      <div class="img-badge">
+        <span class="mono">Current Role</span>
+        <strong>Poseidon Kuwait — 2024</strong>
       </div>
     </div>
   </div>
 </section>
 
-<section style="background:var(--paper)">
+<!-- TIMELINE -->
+<section class="section-dark">
   <div class="container">
-    <div class="center reveal" style="max-width:680px;margin:0 auto 56px">
-      <p class="eyebrow">Athletes say</p>
-      <h2 class="display">In their words</h2>
+    <div class="section-header center reveal">
+      <p class="eyebrow">Career History</p>
+      <h2>Experience Timeline</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2024 – Now</div>
+        <div class="timeline-content">
+          <h3>Assistant Head Coach — Poseidon Kuwait Men</h3>
+          <p class="mono location">Kuwait</p>
+          <p>Leading the men's squad at one of Kuwait's premier swimming clubs. Overseeing technical sessions, programme design, and competition preparation.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2011 – 2024</div>
+        <div class="timeline-content">
+          <h3>Swimming Coach — Gezira El Ward Club</h3>
+          <p class="mono location">Cairo, Egypt</p>
+          <p>13 years developing swimmers across all age groups. Youth development, competitive technique, and senior performance programmes.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2014 – 2018</div>
+        <div class="timeline-content">
+          <h3>Swimming Coach — El Hawar Club</h3>
+          <p class="mono location">Egypt</p>
+          <p>Concurrent club coaching role. Technique clinics, beginner-to-competitive pathways, and individual athlete development plans.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2011 – 2014</div>
+        <div class="timeline-content">
+          <h3>Swimming Coach — Mansoura Stadium</h3>
+          <p class="mono location">Mansoura, Egypt</p>
+          <p>Foundational coaching role alongside university studies. Established the training methodology that underpins all subsequent work.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2011 – Present</div>
+        <div class="timeline-content">
+          <h3>Founder & S&C Coach — Fit Zone Gym</h3>
+          <p class="mono location">Egypt</p>
+          <p>Founded and continues to operate Fit Zone Gym, offering strength & conditioning programming for competitive and recreational athletes.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2011 – 2015</div>
+        <div class="timeline-content">
+          <h3>BSc Physical Education — Mansoura University</h3>
+          <p class="mono location">Mansoura, Egypt</p>
+          <p>Degree in Physical Education with focus on sports science, biomechanics, and athlete development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section-light">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="eyebrow">Core Competencies</p>
+      <h2>Skills & Specialisations</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎯</div>
+        <h3>Trainee Needs Assessment</h3>
+        <p>Systematic baseline evaluations — in water and on land — to build individualised programmes from day one.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🏋️</div>
+        <h3>Somatic Physical Training</h3>
+        <p>Body-awareness methodologies that translate strength work directly into improved aquatic movement patterns.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📊</div>
+        <h3>Multiple Training Methods</h3>
+        <p>Proficient across interval, resistance, functional, and sport-specific training systems — applied by athlete and context.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🧠</div>
+        <h3>Patience & Impulse Control</h3>
+        <p>Long-game coaching: systematic progress, controlled loading, and trust in the process — even when results take time.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🗣️</div>
+        <h3>Communication & Mentoring</h3>
+        <p>Clear, athlete-centred communication. Building confidence, accountability, and a strong coach–athlete relationship.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🏊</div>
+        <h3>All Four Strokes</h3>
+        <p>Technical coaching across freestyle, butterfly, breaststroke, and backstroke — from beginners through to elite level.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section-dark">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="eyebrow">Athletes Say</p>
+      <h2>In Their Words</h2>
     </div>
     <div class="grid-2">
-      <blockquote class="card reveal" style="font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.4;font-style:italic">
-        "I came in barely able to do a length of freestyle. Eight months later I finished a 5k open-water swim. Amr made it feel inevitable."
-        <footer class="mono" style="margin-top:18px;color:var(--muted);font-style:normal">— Karim N.</footer>
+      <blockquote class="testimonial reveal">
+        "I came in barely able to do a length of freestyle. Eight months later I finished a 5k open-water race. Amr made it feel inevitable."
+        <cite class="mono">— Karim N., Open Water Swimmer</cite>
       </blockquote>
-      <blockquote class="card reveal" style="font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.4;font-style:italic">
+      <blockquote class="testimonial reveal">
         "The video reviews changed everything. I could finally see what he was talking about — and fix it."
-        <footer class="mono" style="margin-top:18px;color:var(--muted);font-style:normal">— Mariam S.</footer>
+        <cite class="mono">— Mariam S., Competitive Swimmer</cite>
       </blockquote>
-      <blockquote class="card reveal" style="font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.4;font-style:italic">
-        "Calm, precise, and a brilliant programmer of training. My masters team trusts him completely."
-        <footer class="mono" style="margin-top:18px;color:var(--muted);font-style:normal">— Tarek A., Masters Captain</footer>
+      <blockquote class="testimonial reveal">
+        "Calm, precise, and a brilliant programme designer. My masters team trusts him completely."
+        <cite class="mono">— Tarek A., Masters Team Captain</cite>
       </blockquote>
-      <blockquote class="card reveal" style="font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.4;font-style:italic">
-        "Best investment in my training I've ever made. The taper plan alone was worth it."
-        <footer class="mono" style="margin-top:18px;color:var(--muted);font-style:normal">— Nour K.</footer>
+      <blockquote class="testimonial reveal">
+        "The strength programme Amr built for me at Fit Zone transferred directly into my race splits."
+        <cite class="mono">— Nour K., Club Swimmer</cite>
       </blockquote>
     </div>
   </div>
 </section>
 
-<section style="background:var(--ink);color:#fff">
-  <div class="container center reveal" style="max-width:720px">
-    <p class="eyebrow" style="color:#9aa3b3">Work with me</p>
-    <h2 class="display" style="color:#fff">If the work sounds right, let's talk.</h2>
-    <a class="btn" href="contact.html" style="margin-top:14px">Get in touch</a>
+<section class="section-accent">
+  <div class="container center reveal">
+    <h2>Ready to work with Amr?</h2>
+    <p class="lede center-lede">Online and in-person coaching available. First session is a no-pressure introduction.</p>
+    <a href="contact.html" class="btn btn-light mt-18">Get in Touch</a>
   </div>
 </section>
 
 <footer>
-  <div class="row">
-    <div><h4>A · SMAIER</h4><p style="font-size:14px;max-width:38ch;color:#9aa3b3">Swimming and performance coaching for the curious, the committed, and the competitive.</p></div>
-    <div><h4 style="font-size:13px;letter-spacing:.22em">EXPLORE</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div><h4 style="font-size:13px;letter-spacing:.22em">CONTACT</h4><ul><li>hello@amrsmaier.coach</li><li>+20 100 000 0000</li><li>Cairo · Online worldwide</li></ul></div>
-    <div><h4 style="font-size:13px;letter-spacing:.22em">FOLLOW</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">Strava</a></li></ul></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-wordmark">AMR<span>SAMIR</span></div>
+        <p>Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li>hello@amrsamir.coach</li><li>WhatsApp available</li><li>Cairo · Kuwait</li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">Strava</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-legal"><span>© <span id="year"></span> Amr Samir. All rights reserved.</span></div>
   </div>
-  <div class="legal"><span>© <span id="year"></span> Amr Smaier</span><span>Built with care</span></div>
 </footer>
-
 <script src="assets/js/main.js"></script>
 </body>
 </html>
