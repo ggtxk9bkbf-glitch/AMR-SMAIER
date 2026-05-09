@@ -3,170 +3,247 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Services — Amr Smaier</title>
-<meta name="description" content="Private swim lessons, performance programs, race prep and online coaching." />
+<title>Services — Amr Samir</title>
+<meta name="description" content="Private swim lessons, S&C programmes, race prep and online coaching with Amr Samir." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body data-page="services">
 
 <header class="nav solid">
-  <a class="brand" href="index.html">A · SMAIER</a>
-  <button class="nav-toggle" aria-label="Menu">≡</button>
-  <nav class="links">
+  <a class="brand" href="index.html">AMR<span>SAMIR</span></a>
+  <button class="nav-toggle" aria-label="Menu" id="nav-toggle">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="links" id="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html" class="active">Services</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <a class="cta" href="contact.html">Book a session</a>
+  <a class="cta" href="contact.html">Book a Session</a>
 </header>
 
-<section class="page-head">
-  <p class="eyebrow">Services & programs</p>
-  <h1 class="serif">Coaching, considered.</h1>
+<section class="page-hero page-hero-sm">
+  <img src="public/images/services.jpg" alt="Pool training session" class="page-hero-img" />
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="eyebrow" style="color:var(--accent-light)">Programmes</p>
+    <h1>Coaching, Considered.</h1>
+  </div>
 </section>
 
-<section style="background:var(--paper)">
+<!-- SERVICES DETAIL -->
+<section class="section-light">
   <div class="container">
-    <div class="center reveal" style="max-width:680px;margin:0 auto 56px">
-      <p class="eyebrow">What's on offer</p>
-      <h2 class="display">Four ways to train together.</h2>
+    <div class="section-header center reveal">
+      <p class="eyebrow">What's Available</p>
+      <h2>Four Pathways to Better Performance</h2>
     </div>
-    <div class="grid-2">
-      <article class="card reveal">
-        <p class="num">01 — IN-PERSON</p>
-        <h3 class="display">Private Swim Lessons</h3>
-        <p class="muted">One-to-one pool time. Drills, video, and the kind of feedback that sticks.</p>
-        <ul>
-          <li>60-minute pool session<span>Included</span></li>
-          <li>On-the-spot video review<span>Included</span></li>
-          <li>Personalised drill set<span>Included</span></li>
-          <li>Take-home plan<span>PDF</span></li>
+
+    <div class="service-detail reveal">
+      <div class="service-detail-num mono">01</div>
+      <div class="service-detail-body">
+        <h3>Private Swim Lessons</h3>
+        <p class="lede">One-to-one pool time. Drills, video review, and the kind of precise feedback that sticks between sessions.</p>
+        <ul class="feature-list">
+          <li>60-minute pool session</li>
+          <li>On-deck video analysis</li>
+          <li>Personalised drill set</li>
+          <li>Take-home written plan (PDF)</li>
+          <li>All four strokes: freestyle, butterfly, breaststroke, backstroke</li>
         </ul>
-      </article>
-      <article class="card reveal">
-        <p class="num">02 — HYBRID</p>
-        <h3 class="display">Performance Programs</h3>
-        <p class="muted">A 6 or 12-week block combining pool, gym and recovery. Built for measurable change.</p>
-        <ul>
-          <li>Movement & stroke baseline<span>Wk 1</span></li>
-          <li>Weekly programming<span>6–12 wks</span></li>
-          <li>Strength & conditioning<span>2x/wk</span></li>
-          <li>Mid-block review<span>Video</span></li>
+        <a href="contact.html" class="btn btn-dark">Book This</a>
+      </div>
+      <div class="service-detail-img">
+        <img src="public/images/services.jpg" alt="Swim lesson" class="img-rounded" />
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="service-detail reverse reveal">
+      <div class="service-detail-num mono">02</div>
+      <div class="service-detail-img">
+        <img src="public/images/about.jpg" alt="Strength training" class="img-rounded" />
+      </div>
+      <div class="service-detail-body">
+        <h3>Strength & Conditioning</h3>
+        <p class="lede">Land-based S&C programming built around the physical demands of competitive swimming — power, mobility, injury resistance.</p>
+        <ul class="feature-list">
+          <li>Movement screen & baseline assessment</li>
+          <li>Somatic physical training methodology</li>
+          <li>6 or 12-week structured block</li>
+          <li>Gym programming (Fit Zone or your own facility)</li>
+          <li>Mid-block video review & adjustment</li>
         </ul>
-      </article>
-      <article class="card reveal">
-        <p class="num">03 — ONLINE</p>
-        <h3 class="display">Remote Coaching</h3>
-        <p class="muted">Anywhere in the world. You film, I program. We meet weekly to refine.</p>
-        <ul>
-          <li>TrainingPeaks plan<span>Weekly</span></li>
-          <li>Video stroke analysis<span>2x/mo</span></li>
-          <li>Voice-note feedback<span>Daily</span></li>
-          <li>WhatsApp access<span>Mon–Fri</span></li>
+        <a href="contact.html" class="btn btn-dark">Book This</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="service-detail reveal">
+      <div class="service-detail-num mono">03</div>
+      <div class="service-detail-body">
+        <h3>Remote Online Coaching</h3>
+        <p class="lede">Anywhere in the world. Film your sessions, receive your plan, and get daily feedback — all through a structured online system.</p>
+        <ul class="feature-list">
+          <li>Weekly custom training plan</li>
+          <li>Bi-monthly stroke video analysis</li>
+          <li>Daily voice-note feedback</li>
+          <li>WhatsApp access Monday–Friday</li>
+          <li>Monthly video review call</li>
         </ul>
-      </article>
-      <article class="card reveal">
-        <p class="num">04 — RACE</p>
-        <h3 class="display">Open Water & Race Prep</h3>
-        <p class="muted">Sighting, pacing, taper, race-day plan. From your first 1k to championship swims.</p>
-        <ul>
-          <li>Race-specific block<span>4–8 wks</span></li>
-          <li>Open water sessions<span>Group</span></li>
-          <li>Race-day plan<span>Custom</span></li>
-          <li>Post-race debrief<span>Included</span></li>
+        <a href="contact.html" class="btn btn-dark">Book This</a>
+      </div>
+      <div class="service-detail-img">
+        <img src="public/images/contact.jpg" alt="Online coaching" class="img-rounded" />
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="service-detail reverse reveal">
+      <div class="service-detail-num mono">04</div>
+      <div class="service-detail-img">
+        <img src="public/images/services.jpg" alt="Race preparation" class="img-rounded" />
+      </div>
+      <div class="service-detail-body">
+        <h3>Open Water & Race Prep</h3>
+        <p class="lede">Championship-focused coaching: taper design, race strategy, mental preparation, and a detailed race-day plan.</p>
+        <ul class="feature-list">
+          <li>4–8 week race-specific block</li>
+          <li>Open water sighting & pacing</li>
+          <li>Custom taper programme</li>
+          <li>Race-day plan (written)</li>
+          <li>Post-race debrief & next-cycle planning</li>
         </ul>
-      </article>
+        <a href="contact.html" class="btn btn-dark">Book This</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section style="background:var(--bg)">
+<!-- PRICING -->
+<section class="section-dark">
   <div class="container">
-    <div class="center reveal" style="max-width:680px;margin:0 auto 56px">
-      <p class="eyebrow">Pricing</p>
-      <h2 class="display">Simple, monthly.</h2>
-      <p class="lede" style="margin:0 auto">No long contracts. Pause or stop any month.</p>
+    <div class="section-header center reveal">
+      <p class="eyebrow">Investment</p>
+      <h2>Clear, Simple Pricing</h2>
+      <p class="lede center-lede">No hidden fees. No long lock-ins. Cancel or pause any month.</p>
     </div>
-    <div class="grid-3">
-      <article class="card tier reveal">
-        <p class="num">STARTER</p>
-        <h3 class="display">Foundation</h3>
-        <div class="price serif">$120<small>/ session</small></div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <p class="mono pricing-tier">Starter</p>
+        <h3>Foundation</h3>
+        <div class="price">$120<span>/ session</span></div>
         <ul>
-          <li>1 private pool session<span>Weekly</span></li>
-          <li>Take-home drill plan<span>✓</span></li>
-          <li>Video review<span>On-deck</span></li>
+          <li>1 private pool session</li>
+          <li>On-deck video review</li>
+          <li>Take-home drill plan</li>
         </ul>
-        <a href="contact.html" class="btn ink">Choose foundation</a>
-      </article>
-      <article class="card tier featured reveal">
-        <p class="num">MOST CHOSEN</p>
-        <h3 class="display">Performance</h3>
-        <div class="price serif">$480<small>/ month</small></div>
+        <a href="contact.html" class="btn btn-outline">Get Started</a>
+      </div>
+      <div class="pricing-card featured reveal" style="animation-delay:.1s">
+        <div class="featured-badge mono">Most Popular</div>
+        <p class="mono pricing-tier">Performance</p>
+        <h3>Monthly Package</h3>
+        <div class="price">$480<span>/ month</span></div>
         <ul>
-          <li>4 private sessions<span>Monthly</span></li>
-          <li>S&C programming<span>2x/wk</span></li>
-          <li>Monthly video review<span>✓</span></li>
-          <li>WhatsApp access<span>✓</span></li>
+          <li>4 private pool sessions</li>
+          <li>S&C programming (2×/wk)</li>
+          <li>Monthly video review</li>
+          <li>WhatsApp support</li>
         </ul>
-        <a href="contact.html" class="btn">Choose performance</a>
-      </article>
-      <article class="card tier reveal">
-        <p class="num">REMOTE</p>
-        <h3 class="display">Online Coaching</h3>
-        <div class="price serif">$260<small>/ month</small></div>
+        <a href="contact.html" class="btn btn-light">Get Started</a>
+      </div>
+      <div class="pricing-card reveal" style="animation-delay:.2s">
+        <p class="mono pricing-tier">Remote</p>
+        <h3>Online Coaching</h3>
+        <div class="price">$260<span>/ month</span></div>
         <ul>
-          <li>Custom training plan<span>Weekly</span></li>
-          <li>Stroke analysis<span>2x/mo</span></li>
-          <li>Voice-note feedback<span>Daily</span></li>
+          <li>Weekly training plan</li>
+          <li>Bi-monthly stroke analysis</li>
+          <li>Daily voice feedback</li>
         </ul>
-        <a href="contact.html" class="btn ink">Choose remote</a>
-      </article>
+        <a href="contact.html" class="btn btn-outline">Get Started</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section style="background:var(--paper)">
-  <div class="container split">
-    <div class="reveal">
-      <p class="eyebrow">Process</p>
-      <h2 class="display">How a first month looks.</h2>
-      <div class="divider" style="margin:24px 0"></div>
-      <ol style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:18px">
-        <li><span class="mono muted">Wk 0 ·</span> <strong>Discovery call.</strong> Goals, history, schedule.</li>
-        <li><span class="mono muted">Wk 1 ·</span> <strong>Baseline.</strong> Filmed swim + movement screen.</li>
-        <li><span class="mono muted">Wk 2 ·</span> <strong>Plan delivered.</strong> Pool, gym, recovery — written down.</li>
-        <li><span class="mono muted">Wk 3 ·</span> <strong>Refine.</strong> First check-in. Adjust load and focus.</li>
-        <li><span class="mono muted">Wk 4 ·</span> <strong>Review.</strong> Re-film, compare, plan the next block.</li>
-      </ol>
+<!-- PROCESS -->
+<section class="section-light">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="eyebrow">The Process</p>
+      <h2>How Your First Month Looks</h2>
     </div>
-    <div class="reveal">
-      <img src="https://picsum.photos/seed/lanes/900/1100" alt="Lane lines" style="border-radius:18px;aspect-ratio:4/5;object-fit:cover" />
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">Wk 0</div>
+        <div class="step-body">
+          <h4>Discovery Call</h4>
+          <p>Goals, history, current level, schedule. No commitments — just an honest conversation.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">Wk 1</div>
+        <div class="step-body">
+          <h4>Baseline Assessment</h4>
+          <p>Filmed swim session + movement screen on land. We measure everything before building anything.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">Wk 2</div>
+        <div class="step-body">
+          <h4>Plan Delivered</h4>
+          <p>Your written programme — pool sessions, gym work, recovery. Clear, structured, realistic.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">Wk 3</div>
+        <div class="step-body">
+          <h4>First Check-In</h4>
+          <p>Review load, adjust focus. Are you responding? Great. Is something off? We fix it now.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">Wk 4</div>
+        <div class="step-body">
+          <h4>Block Review</h4>
+          <p>Re-film, compare to baseline, measure progress. Plan the next block based on real data.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section style="background:var(--ink);color:#fff">
-  <div class="container center reveal" style="max-width:720px">
-    <h2 class="display" style="color:#fff">Not sure which fits? Book a 20-minute call.</h2>
-    <a class="btn" href="contact.html" style="margin-top:14px">Schedule a call</a>
+<section class="section-accent">
+  <div class="container center reveal">
+    <h2>Not Sure Which Programme Fits?</h2>
+    <p class="lede center-lede">Book a free 20-minute call and we'll figure it out together.</p>
+    <a href="contact.html" class="btn btn-light mt-18">Schedule a Call</a>
   </div>
 </section>
 
 <footer>
-  <div class="row">
-    <div><h4>A · SMAIER</h4><p style="font-size:14px;max-width:38ch;color:#9aa3b3">Swimming and performance coaching for the curious, the committed, and the competitive.</p></div>
-    <div><h4 style="font-size:13px;letter-spacing:.22em">EXPLORE</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div><h4 style="font-size:13px;letter-spacing:.22em">CONTACT</h4><ul><li>hello@amrsmaier.coach</li><li>+20 100 000 0000</li><li>Cairo · Online worldwide</li></ul></div>
-    <div><h4 style="font-size:13px;letter-spacing:.22em">FOLLOW</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">Strava</a></li></ul></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-wordmark">AMR<span>SAMIR</span></div>
+        <p>Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
+      </div>
+      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>hello@amrsamir.coach</li><li>WhatsApp available</li><li>Cairo · Kuwait</li></ul></div>
+      <div><h4>Follow</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">Strava</a></li></ul></div>
+    </div>
+    <div class="footer-legal"><span>© <span id="year"></span> Amr Samir. All rights reserved.</span></div>
   </div>
-  <div class="legal"><span>© <span id="year"></span> Amr Smaier</span><span>Built with care</span></div>
 </footer>
-
 <script src="assets/js/main.js"></script>
 </body>
 </html>

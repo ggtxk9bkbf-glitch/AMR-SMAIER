@@ -3,140 +3,195 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Amr Smaier — Swimming & Performance Coach</title>
-<meta name="description" content="One-to-one swimming and performance coaching. Built around your stroke, your body, and your goals." />
+<title>Amr Samir — Swimming & Performance Coach</title>
+<meta name="description" content="Elite swimming and strength & conditioning coaching. Founder of Fit Zone Gym. 12+ years developing champions." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body data-page="home">
 
 <header class="nav">
-  <a class="brand" href="index.html">A · SMAIER</a>
-  <button class="nav-toggle" aria-label="Menu">≡</button>
-  <nav class="links">
+  <a class="brand" href="index.html">AMR<span>SAMIR</span></a>
+  <button class="nav-toggle" aria-label="Menu" id="nav-toggle">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="links" id="nav-links">
     <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <a class="cta" href="contact.html">Book a session</a>
+  <a class="cta" href="contact.html">Book a Session</a>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <!-- Drop-in video: replace src with your file in /assets/video/hero.mp4 -->
-  <video autoplay muted loop playsinline poster="https://picsum.photos/seed/poolhero/1800/1000">
-    <source src="assets/video/hero.mp4" type="video/mp4" />
+  <video class="hero-video" autoplay muted loop playsinline poster="public/images/hero.jpg">
+    <source src="public/videos/hero.mp4" type="video/mp4" />
   </video>
-  <img class="hero-img" src="https://picsum.photos/seed/poolhero/1800/1000" alt="" />
+  <img class="hero-img" src="public/images/hero.jpg" alt="Elite swimming coaching" />
+  <div class="hero-overlay"></div>
   <div class="hero-inner">
-    <p>Swimming · Performance · Recovery</p>
-    <h1 class="serif">Move like water.</h1>
-    <a href="services.html" class="btn ghost">Explore coaching</a>
+    <div class="hero-badge reveal-up">
+      <span class="mono">Est. 2011 · Cairo, Egypt</span>
+    </div>
+    <h1 class="reveal-up" style="animation-delay:.1s">
+      Train Like<br/>A <em>Champion.</em>
+    </h1>
+    <p class="hero-sub reveal-up" style="animation-delay:.22s">
+      Swimming · Strength & Conditioning · Performance
+    </p>
+    <div class="hero-actions reveal-up" style="animation-delay:.34s">
+      <a href="services.html" class="btn btn-primary">Explore Programs</a>
+      <a href="about.html" class="btn btn-ghost">Meet the Coach</a>
+    </div>
   </div>
-  <div class="scroll-hint">Scroll</div>
+  <div class="hero-scroll">
+    <span class="mono">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
-<section style="background:var(--paper)">
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="container stats-row">
+    <div class="stat reveal">
+      <strong>12+</strong>
+      <span>Years Coaching</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal">
+      <strong>300+</strong>
+      <span>Athletes Trained</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal">
+      <strong>3</strong>
+      <span>Elite Clubs</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal">
+      <strong>Kuwait</strong>
+      <span>Current Base</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO SPLIT -->
+<section class="section-light">
   <div class="container split">
-    <div class="reveal">
-      <p class="eyebrow">A note from the coach</p>
-      <h2 class="display">Coaching that respects how your body actually moves.</h2>
-      <p class="lede">For more than a decade I've worked with swimmers, triathletes and complete beginners — building stroke, capacity and confidence one session at a time. No shortcuts, no shouting. Just attention, structure, and the work.</p>
-      <a href="about.html" class="btn ink" style="margin-top:18px">About Amr</a>
+    <div class="split-img reveal">
+      <img src="public/images/about.jpg" alt="Coach Amr Samir" class="img-rounded" />
+      <div class="img-badge">
+        <span class="mono">Head Coach</span>
+        <strong>Poseidon Kuwait</strong>
+      </div>
     </div>
-    <div class="reveal">
-      <img src="https://picsum.photos/seed/coachportrait/900/1100" alt="Coach portrait" style="border-radius:18px;aspect-ratio:4/5;object-fit:cover" />
+    <div class="split-text reveal" style="animation-delay:.15s">
+      <p class="eyebrow">About the Coach</p>
+      <h2>Built on Discipline.<br/>Driven by Results.</h2>
+      <p class="lede">I'm Amr Samir — swimming coach, strength & conditioning specialist, and founder of Fit Zone Gym. Since 2011, I've developed athletes at every level, from youth programmes at Gezira El Ward Club to leading men's squads at Poseidon Kuwait.</p>
+      <p class="lede" style="margin-top:14px">My coaching philosophy is simple: understand the athlete, build the programme around their needs, and hold the standard every single session.</p>
+      <a href="about.html" class="btn btn-dark mt-18">Full Biography</a>
     </div>
   </div>
 </section>
 
-<section style="background:var(--bg)">
+<!-- SERVICES PREVIEW -->
+<section class="section-dark">
   <div class="container">
-    <div class="center reveal" style="max-width:680px;margin:0 auto 56px">
-      <p class="eyebrow">What I offer</p>
-      <h2 class="display">Three pillars. One athlete — you.</h2>
+    <div class="section-header center reveal">
+      <p class="eyebrow">What I Offer</p>
+      <h2>Coaching Programmes</h2>
+      <p class="lede center-lede">Four specialised disciplines. One committed coach.</p>
     </div>
     <div class="grid-3">
-      <article class="card reveal">
-        <p class="num">01</p>
-        <h3 class="display">Swimming Technique</h3>
-        <p class="muted">Freestyle, breaststroke, butterfly. Filmed analysis, drills, and a clear plan to improve every length.</p>
-      </article>
-      <article class="card reveal">
-        <p class="num">02</p>
-        <h3 class="display">Strength & Conditioning</h3>
-        <p class="muted">Land-based programming designed around the demands of the pool — mobility, power, and durability.</p>
-      </article>
-      <article class="card reveal">
-        <p class="num">03</p>
-        <h3 class="display">Race & Open Water</h3>
-        <p class="muted">From your first 1k to championship racing. Pacing, sighting, taper — the details that decide the day.</p>
-      </article>
+      <div class="service-card reveal">
+        <div class="service-icon">🏊</div>
+        <h3>Swim Technique</h3>
+        <p>Freestyle, butterfly, breaststroke, backstroke. Video analysis, targeted drills, stroke refinement.</p>
+        <a href="services.html" class="card-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal" style="animation-delay:.1s">
+        <div class="service-icon">💪</div>
+        <h3>Strength & Conditioning</h3>
+        <p>Land-based power programming built around the specific demands of competitive swimming.</p>
+        <a href="services.html" class="card-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal" style="animation-delay:.2s">
+        <div class="service-icon">🏆</div>
+        <h3>Elite Race Prep</h3>
+        <p>Championship taper, race strategy, mental preparation. Designed for podium performance.</p>
+        <a href="services.html" class="card-link">Learn more →</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section style="background:var(--paper)">
-  <div class="container stats reveal">
-    <div><div class="n serif">12+</div><div class="l">Years coaching</div></div>
-    <div><div class="n serif">300+</div><div class="l">Athletes guided</div></div>
-    <div><div class="n serif">48</div><div class="l">Race podiums</div></div>
-    <div><div class="n serif">5★</div><div class="l">Average review</div></div>
-  </div>
-</section>
-
-<section style="background:var(--bg)">
-  <div class="container split reverse">
-    <div class="reveal">
-      <p class="eyebrow">The method</p>
-      <h2 class="display">Measure. Move. Refine.</h2>
-      <p class="lede">Every program starts with a baseline — video in the water, a movement screen on land. From there we build a 6-week block of focused work, review the data, and adjust. It's a quiet, deliberate process. It works.</p>
-      <a href="services.html" class="btn ink" style="margin-top:18px">See programs</a>
-    </div>
-    <div class="reveal">
-      <img src="https://picsum.photos/seed/poolside/900/1100" alt="Poolside" style="border-radius:18px;aspect-ratio:4/5;object-fit:cover" />
-    </div>
-  </div>
-</section>
-
-<section style="background:var(--ink);color:#fff">
+<!-- TESTIMONIAL -->
+<section class="section-accent">
   <div class="container reveal">
-    <p class="quote">"Six weeks in, my 400m dropped by 22 seconds. More importantly, swimming finally feels like mine."</p>
-    <p class="center mono" style="margin-top:28px;color:#9aa3b3">— Layla H., masters swimmer</p>
+    <blockquote class="big-quote">
+      "Coach Amr's technical eye and relentless attention to detail transformed my freestyle — and my results."
+    </blockquote>
+    <cite class="mono">— National Level Swimmer, Gezira El Ward Club</cite>
   </div>
 </section>
 
-<section style="background:var(--paper)">
-  <div class="container center reveal" style="max-width:720px">
-    <p class="eyebrow">Ready to begin?</p>
-    <h2 class="display">A first session. Honest answers. No pressure.</h2>
-    <p class="lede" style="margin:0 auto 28px">The first 60 minutes are about you — your goals, your history, what we can realistically build. Bring your goggles.</p>
-    <a class="btn ink" href="contact.html">Book your first session</a>
+<!-- CTA SPLIT -->
+<section class="section-light">
+  <div class="container split reverse">
+    <div class="split-text reveal">
+      <p class="eyebrow">Ready to Begin?</p>
+      <h2>Your First Session Starts Here.</h2>
+      <p class="lede">The first 60 minutes are a baseline: goals, current level, movement screen. We build from there — systematically, patiently, and with a clear plan in hand.</p>
+      <a href="contact.html" class="btn btn-dark mt-18">Book Your Session</a>
+    </div>
+    <div class="split-img reveal" style="animation-delay:.15s">
+      <img src="public/images/services.jpg" alt="Pool training" class="img-rounded" />
+    </div>
   </div>
 </section>
 
 <footer>
-  <div class="row">
-    <div>
-      <h4>A · SMAIER</h4>
-      <p style="font-size:14px;max-width:38ch;color:#9aa3b3">Swimming and performance coaching for the curious, the committed, and the competitive.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-wordmark">AMR<span>SAMIR</span></div>
+        <p>Swimming Coach · S&C Specialist · Founder, Fit Zone Gym<br/>Cairo & Kuwait · Online Worldwide</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>hello@amrsamir.coach</li>
+          <li>WhatsApp available</li>
+          <li>Cairo · Kuwait</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Strava</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4 style="font-size:13px;letter-spacing:.22em">EXPLORE</h4>
-      <ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul>
-    </div>
-    <div>
-      <h4 style="font-size:13px;letter-spacing:.22em">CONTACT</h4>
-      <ul><li>hello@amrsmaier.coach</li><li>+20 100 000 0000</li><li>Cairo · Online worldwide</li></ul>
-    </div>
-    <div>
-      <h4 style="font-size:13px;letter-spacing:.22em">FOLLOW</h4>
-      <ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">Strava</a></li></ul>
+    <div class="footer-legal">
+      <span>© <span id="year"></span> Amr Samir. All rights reserved.</span>
     </div>
   </div>
-  <div class="legal"><span>© <span id="year"></span> Amr Smaier</span><span>Built with care</span></div>
 </footer>
 
 <script src="assets/js/main.js"></script>
