@@ -473,10 +473,19 @@ em { font-style: italic; color: var(--accent); }
 /* Video fills the hero on every device — no gaps, no black bars */
 .svc-hero-video {
   position: absolute;
+  inset: 0;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
   width: 100%;
   height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
   object-fit: cover;
   object-position: center center;
   z-index: 0;
