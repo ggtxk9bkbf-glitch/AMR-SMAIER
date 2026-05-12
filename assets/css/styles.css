@@ -454,10 +454,15 @@ em { font-style: italic; color: var(--accent); }
 /* ---- Services full-viewport video hero ---- */
 .svc-hero {
   position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  /* Desktop default: full viewport height */
-  height: 100vh;
-  min-height: 560px;
+  height: 100vh;        /* fallback */
+  height: 100svh;       /* mobile-safe full viewport */
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -465,18 +470,17 @@ em { font-style: italic; color: var(--accent); }
   color: var(--white);
 }
 
-/* Video always fills the container with no black bars on any device */
+/* Video fills the hero on every device — no gaps, no black bars */
 .svc-hero-video {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  /* Intrinsic size; overridden per breakpoint below */
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
   z-index: 0;
+  pointer-events: none;
 }
 
 .svc-hero-overlay {
@@ -484,8 +488,8 @@ em { font-style: italic; color: var(--accent); }
   background:
     linear-gradient(to bottom,
       rgba(10,22,40,.50) 0%,
-      rgba(10,22,40,.68) 55%,
-      rgba(10,22,40,.88) 100%);
+      rgba(10,22,40,.70) 55%,
+      rgba(10,22,40,.90) 100%);
 }
 .svc-hero-content {
   position: relative; z-index: 2;
@@ -500,6 +504,7 @@ em { font-style: italic; color: var(--accent); }
 }
 .svc-hero-title {
   font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(48px, 10vw, 128px);
   line-height: .95;
   color: var(--white);
   letter-spacing: .02em;
@@ -507,6 +512,7 @@ em { font-style: italic; color: var(--accent); }
   text-shadow: 0 2px 32px rgba(0,0,0,.55);
 }
 .svc-hero-sub {
+  font-size: 13px;
   letter-spacing: .18em;
   color: rgba(255,255,255,.78);
   text-transform: uppercase;
@@ -520,64 +526,19 @@ em { font-style: italic; color: var(--accent); }
   z-index: 3;
 }
 
-/* ---- Desktop: ≥ 1024px ---- */
-@media (min-width: 1024px) {
-  .svc-hero { height: 100vh; min-height: 640px; }
-  .svc-hero-video { width: 100%; height: 100%; top: 0; left: 0; transform: none; }
-  .svc-hero-title { font-size: clamp(72px, 9vw, 128px); }
-  .svc-hero-sub { font-size: 13px; display: block; }
-}
-
-/* ---- Tablet: 769px – 1023px ---- */
+/* ---- Tablet: 769–1023px ---- */
 @media (min-width: 769px) and (max-width: 1023px) {
-  .svc-hero { height: 80vh; min-height: 520px; }
-  .svc-hero-video { width: 100%; height: 100%; top: 0; left: 0; transform: none; }
   .svc-hero-title { font-size: clamp(60px, 10vw, 96px); }
-  .svc-hero-sub { font-size: 12px; display: block; }
+  .svc-hero-sub { font-size: 12px; }
   .svc-hero .hero-scroll { bottom: 24px; }
 }
 
 /* ---- Mobile: ≤ 768px ---- */
 @media (max-width: 768px) {
-  .svc-hero {
-    /* Full viewport height — fills entire phone screen */
-    height: 100vh;
-    /* svh fallback for browsers that respect dynamic viewport */
-    height: 100svh;
-    min-height: 100vh;
-    min-height: 100svh;
-    width: 100%;
-    padding: 0;
-  }
-  /* Video forced to fully cover the hero — no letterboxing on any phone */
-  .svc-hero-video {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    transform: none;
-    object-fit: cover;
-    object-position: center center;
-  }
-  /* Tighter, centered content stack */
-  .svc-hero-content {
-    padding: 0 20px;
-    max-width: 100%;
-  }
-  .svc-hero-eyebrow {
-    font-size: 11px;
-    letter-spacing: .22em;
-    margin-bottom: 14px;
-  }
-  .svc-hero-title {
-    font-size: clamp(48px, 14vw, 80px);
-    line-height: .92;
-    margin: 0 0 18px;
-  }
+  .svc-hero-content { padding: 0 20px; max-width: 100%; }
+  .svc-hero-eyebrow { font-size: 11px; letter-spacing: .22em; margin-bottom: 14px; }
+  .svc-hero-title { font-size: clamp(44px, 13vw, 72px); line-height: .92; margin: 0 0 18px; }
   .svc-hero-sub { display: none; }
-  /* CTA — full-tap-target button on mobile */
   .svc-hero-content .btn {
     display: inline-block;
     padding: 14px 28px;
@@ -586,7 +547,6 @@ em { font-style: italic; color: var(--accent); }
     min-width: 200px;
   }
   .svc-hero .hero-scroll { bottom: 20px; }
-  /* Stronger overlay for legibility on small screens */
   .svc-hero-overlay {
     background:
       linear-gradient(to bottom,
